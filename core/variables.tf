@@ -260,7 +260,3 @@ variable "r53_public_hosted_zone" {}
 variable "librato_email" {}
 
 variable "librato_token" {}
-
-variable "papertrail_host" {}
-
-variable "papertrail_port" {}

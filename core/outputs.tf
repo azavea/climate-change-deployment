@@ -69,11 +69,3 @@ output "s3_storage_bucket" {
 output "sqs_queue_name" {
   value = "${var.sqs_queue_name}"
 }
-
-output "papertrail_host" {
-  value = "${var.papertrail_host}"
-}
-
-output "papertrail_port" {
-  value = "${var.papertrail_port}"
-}

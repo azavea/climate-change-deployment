@@ -42,10 +42,6 @@ output "rds_host" {
   value = "${aws_route53_record.database.fqdn}"
 }
 
-output "rds_database_name" {
-  value = "${var.rds_database_name}"
-}
-
 output "rds_username" {
   value = "${var.rds_database_username}"
 }

@@ -193,13 +193,3 @@ resource "aws_security_group_rule" "container_instance_bastion_ssh_ingress" {
   security_group_id        = "${module.container_service_cluster.container_instance_security_group_id}"
   source_security_group_id = "${module.vpc.bastion_security_group_id}"
 }
-
-resource "aws_security_group_rule" "container_instance_papertrail_egress" {
-  type        = "egress"
-  from_port   = "${var.papertrail_port}"
-  to_port     = "${var.papertrail_port}"
-  protocol    = "tcp"
-  cidr_blocks = ["0.0.0.0/0"]
-
-  security_group_id = "${module.container_service_cluster.container_instance_security_group_id}"
-}

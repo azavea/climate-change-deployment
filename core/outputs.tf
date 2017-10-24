@@ -22,6 +22,10 @@ output "public_hosted_zone_id" {
   value = "${aws_route53_zone.external.id}"
 }
 
+output "temperate_public_hosted_zone_id" {
+  value = "${aws_route53_zone.temperate.id}"
+}
+
 output "container_service_cluster_id" {
   value = "${module.container_service_cluster.id}"
 }

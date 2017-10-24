@@ -253,9 +253,11 @@ variable "sqs_receive_wait_time_seconds" {}
 
 variable "sqs_visibility_timeout_seconds" {}
 
-variable "r53_private_hosted_zone" {}
+variable "climate_r53_private_hosted_zone" {}
 
-variable "r53_public_hosted_zone" {}
+variable "climate_r53_public_hosted_zone" {}
+
+variable "temperate_r53_public_hosted_zone" {}
 
 variable "librato_email" {}
 

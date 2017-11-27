@@ -7,7 +7,6 @@ services:
       - $HOME/.aws:/root/.aws:ro
     environment:
       - AWS_PROFILE=climate
-      - GIT_COMMIT=${GIT_COMMIT:-latest}
       - CC_DEBUG=1
       - CC_SETTINGS_BUCKET=${CC_SETTINGS_BUCKET:-staging-us-east-1-climate-config}
     working_dir: /usr/local/src

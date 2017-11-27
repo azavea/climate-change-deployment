@@ -32,8 +32,6 @@ variable "aws_sqs_policy_arn" {
   default = "arn:aws:iam::aws:policy/AmazonSQSFullAccess"
 }
 
-variable "aws_ecs_ami" {}
-
 variable "aws_key_name" {}
 
 variable "vpc_cidr_block" {

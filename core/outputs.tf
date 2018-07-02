@@ -69,3 +69,11 @@ output "s3_storage_bucket" {
 output "sqs_queue_name" {
   value = "${var.sqs_queue_name}"
 }
+
+output "climate_ssl_certificate_arn" {
+  value = "${module.climate_cert.arn}"
+}
+
+output "temperate_ssl_certificate_arn" {
+  value = "${module.temperate_cert.arn}"
+}

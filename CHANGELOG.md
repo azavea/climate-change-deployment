@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.1.0](https://github.com/azavea/climate-change-deployment/tree/1.1.0) (2018-07-02)
+
+[Full Changelog](https://github.com/azavea/climate-change-deployment/compare/1.0.0...1.1.0)
+
+**Merged pull requests:**
+
+-  Add DNS-validated SSL certificates for Climate and Temperate domains [\#7](https://github.com/azavea/climate-change-deployment/pull/7)
+
 ## [1.0.0](https://github.com/azavea/climate-change-deployment/tree/1.0.0) (2017-11-28)
 
 [Full Changelog](https://github.com/azavea/climate-change-deployment/compare/72854411ac84971c17c7f87995b489496e49d514...1.0.0)

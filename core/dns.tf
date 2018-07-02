@@ -46,3 +46,25 @@ resource "aws_route53_record" "bastion" {
 resource "aws_route53_zone" "temperate" {
   name = "${var.temperate_r53_public_hosted_zone}"
 }
+
+#
+# ACM Certificate Validations
+#
+
+module "temperate_cert" {
+  source = "github.com/azavea/terraform-aws-acm-certificate?ref=0.1.0"
+
+  domain_name               = "${replace(var.temperate_r53_public_hosted_zone,"/.$/","")}"
+  subject_alternative_names = ["*.${replace(var.temperate_r53_public_hosted_zone,"/.$/","")}"]
+  hosted_zone_id            = "${aws_route53_zone.temperate.zone_id}"
+  validation_record_ttl     = "60"
+}
+
+module "climate_cert" {
+  source = "github.com/azavea/terraform-aws-acm-certificate?ref=0.1.0"
+
+  domain_name               = "${replace(var.climate_r53_public_hosted_zone,"/.$/","")}"
+  subject_alternative_names = ["*.${replace(var.climate_r53_public_hosted_zone,"/.$/","")}"]
+  hosted_zone_id            = "${aws_route53_zone.external.zone_id}"
+  validation_record_ttl     = "60"
+}

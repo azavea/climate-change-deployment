@@ -59,7 +59,7 @@ variable "rds_allocated_storage" {
 }
 
 variable "rds_engine_version" {
-  default = "9.5.2"
+  default = "9.5.13"
 }
 
 variable "rds_parameter_group_family" {

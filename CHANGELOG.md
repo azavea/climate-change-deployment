@@ -1,5 +1,13 @@
 # Change Log
 
+## [1.1.1](https://github.com/azavea/climate-change-deployment/tree/1.1.1) (2019-01-15)
+
+[Full Changelog](https://github.com/azavea/climate-change-deployment/compare/1.1.0...1.1.1)
+
+**Merged pull requests:**
+
+- Upgrade RDS engine version to Postgres 9.5.13 [\#9](https://github.com/azavea/climate-change-deployment/pull/9)
+
 ## [1.1.0](https://github.com/azavea/climate-change-deployment/tree/1.1.0) (2018-07-02)
 
 [Full Changelog](https://github.com/azavea/climate-change-deployment/compare/1.0.0...1.1.0)
